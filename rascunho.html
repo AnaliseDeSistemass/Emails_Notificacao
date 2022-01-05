@@ -1,0 +1,14 @@
+<p>Caro(a), <strong>${user.username}</strong>,
+</p> <br> <p>Clique no link abaixo para ser redirecionado à página de redefinição de nova senha de acesso ao portal da Banpará Frota</p>
+ <br> <a href="${grailsApplication.config.getProperty('grails.serverURL')}/forgetPasswordToken/useToken?key=${token}" target="_blank">Definir Nova Senha</a>
+
+
+
+
+
+ <p>Um novo Pedido acabou de ser solicitado no portal de Gestão de Frotas Banpará</p>
+ <br> <table> <tr><td>ID</td><td>${pedidoCarga.id}</td>
+</tr> <tr><td>Cliente</td>
+<td>${pedidoCarga.unidade.rh.identificacaoResumida}</td></tr> <tr>
+<td>Data Programada</td><td>${pedidoCarga.dataCarga}</td>
+</tr> <tr><td>Valor Total</td><td>${pedidoCarga.total}</td></tr> </table>

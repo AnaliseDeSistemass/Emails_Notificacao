@@ -1,3 +1,121 @@
+<!--
+<html>
+<head>
+<title>Banpara_Carga</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+  <div id="centro" align="center"> 
+
+      
+       
+        <style>
+        * {
+            font-family: sans-serif; /* Change your font family */
+          }
+          
+          .content-table {
+            border-collapse: collapse;
+            margin: center;
+            font-size: 0.9em;
+            min-width: 300px;
+            border-radius: 6px 6px 0 0;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+          }
+          
+          .content-table thead tr {
+            background-color: #001c98;
+            color: #ffffff;
+            text-align: left;
+            font-weight: bold;
+            border: medium;
+          }
+          
+          .content-table th,
+          .content-table td {
+            padding: 10px 10px;
+          }
+          
+          .content-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+          }
+          
+          .content-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+          }
+          
+          .content-table tbody tr:last-of-type {
+            border-bottom: 1px solid #001c98;
+          }
+          
+          .content-table tbody tr.active-row {
+            font-weight: bold;
+            color: #0c29ad;
+          }
+
+          .text {
+            float:center;
+            font: 100% sans-serif;
+            width: 50%;
+            height: 15%;
+            margin: 5% 0;
+            padding: 10px;
+            text-align: center;
+          }
+
+          .img{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+
+
+        </style>
+
+            <tr>
+                <td colspan="2">
+                    <img src="https://i.ibb.co/Tb8ywd8/Banpara-Redefini-o-Senha-01.png"/>
+                </td>
+            </tr>
+        <div class="text">
+            <tr>
+              <strong>
+
+                <b>Um novo Pedido acabou de ser solicitado no portal de Gestão de Frotas Banpará
+
+            </tr>
+            <divcenter>
+              <table class="content-table">
+                <thead>
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Data Programada</th>
+                            <th>Valor</th> 
+                        </tr>
+                </thead>
+
+                  <tbody>
+                        <tr class="active-row">
+                            <td>${pedidoCarga.unidade.rh.identificacaoResumida}</td>
+                            <td>${pedidoCarga.dataCarga}</td>
+                            <td>R$ ${pedidoCarga.total}</td>
+                        </tr>
+                        <tr>
+                    </tbody>
+                </table>
+              </divcenter>
+             </strong>
+            </div> 
+    </div> 
+</div> 
+</body>
+</html>
+-->
+
+
+  
 <html>
 <head>
 <title>Banpara_Carga</title>
@@ -51,7 +169,6 @@
           }
 
           .borda {
-            border-top: ;
             width: 800px;
             height: 150px;
             padding: 20px;
@@ -61,21 +178,20 @@
 
             <tr>
                 <td colspan="2">
-                    <img src="https://i.ibb.co/CM6YLZ0/Banpara-Carga-01.gif" style="height: 155";alt="Banpara-Carga-01" border="0" />
+                    <img src="https://i.ibb.co/CM6YLZ0/Banpara-Carga-01.gif" style="height: 145";alt="Banpara-Carga-01" border="0" />
                 </td>
             </tr>
         <div class="borda">
             <tr>
-              <strong style="font: 22px arial;"><p align="center">
+              <strong style="font: 20px arial;"><p align="center">
 
-                <b>Olá,Voce recebeu uma notificação automática, para um novo pedido de carga
+                <b>Um novo pedido acabou de ser solicitado no portal de Gestão de Frotas Banpará
 
               </strong></p>
             </tr>
             <table class="content-table">
                 <thead>
                     <tr>
-                        <th>ID</th>
                         <th>Cliente</th>
                         <th>Data Programada</th>
                         <th>Valor</th> 
@@ -83,17 +199,10 @@
                 </thead>
 
                 <tbody>
-                    <tr>
-                    <td>101</td>
-                    <td>(27.870.967/0001-80) HODIE ENGENHARIA</td>
-                    <td>Mon Jan 03 00:00:00 BRST 2022</td>
-                    <td>R$ 400</td>
-                    </tr>
                     <tr class="active-row">
-                        <td>102</td>
-                        <td>(04.913.711/0001-08) BANPARÁ</td>
-                        <td>Tue Jan 04 00:00:00 BRST 2022</td>
-                        <td>R$ 200</td>
+                      <td>${pedidoCarga.unidade.rh.identificacaoResumida}</td>
+                      <td>${pedidoCarga.dataCarga}</td>
+                      <td>R$ ${pedidoCarga.total}</td>
                     </tr>
                     <tr>
                 </tbody>
